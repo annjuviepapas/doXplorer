@@ -1,8 +1,5 @@
-$(document).ready(function() {
-    //start writing your javascript code here
 
-    
-});
+		
 
 
 
@@ -57,7 +54,9 @@ $(window).on('resize', function() {
 			});
 
 		});
-
+		
+		var tl = new TimelineLite();
+		tl.staggerFrom(".logo", 0.2, {scale:0, autoAlpha:45});
 	});
 
 })(jQuery);
